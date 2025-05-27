@@ -13,7 +13,7 @@ interface CompanionSessionPageProps {
 const CompanionSession = async({params}:CompanionSessionPageProps) => {
   const {id} = await params
   const companion = await getCompanion(id)
-  const {name, subject, title, topic, duration} = companion
+  const {name, subject, topic, duration} = companion
   const user = await currentUser()
 
   if(!user) redirect("/sign-in")
