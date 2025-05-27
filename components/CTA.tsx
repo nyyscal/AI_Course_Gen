@@ -5,7 +5,7 @@ import React from 'react'
 const CTA = () => {
   return (
     <section className='cta-section'>
-      <div className='cta-badge'>STart learning your way.</div>
+      <div className='cta-badge'>Start learning your way.</div>
       <h2 className='text-3xl font-bold'>Build & Personalize Learning Companion</h2>
       <p>Pick a name, subject, voice & personality - and start learing thorugh voice conversations taht feels natural and fun.</p>
       <Image src="images/cta.svg" alt='cta' width={362} height={232}/>
