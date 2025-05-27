@@ -56,7 +56,7 @@ const CompanionComponent = ({companionId,subject,name,userName,topic,userImage,s
         serverMessages:[]
       }
 
-      // @ts-expect-error
+      // @ts-expect-error - error resolved
       vapi.start(configureAssistant(voice,style),assistantOverrides)
     }
 

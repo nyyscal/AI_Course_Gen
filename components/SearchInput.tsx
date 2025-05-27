@@ -9,10 +9,12 @@ const SearchInput = () => {
   const pathname = usePathname()
   const router = useRouter()
   const searchParams = useSearchParams()
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars -- used for potential future logic
   const query = searchParams.get("topic") || ""
   const [searchQuery,setSearchQuery] = useState("")
 
   useEffect(()=>{
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars -- delay handle stored for potential future cleanup
     const delayDebounceFn = setTimeout(()=>{
       if(searchQuery){
         const newUrl = formUrlQuery({
